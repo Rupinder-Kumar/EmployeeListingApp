@@ -12,4 +12,4 @@ function UnAunthenticatedApp() {
     )
 }
 
-export default UnAunthenticatedApp
+export default UnAunthenticatedApp;

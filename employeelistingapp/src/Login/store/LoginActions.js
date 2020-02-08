@@ -16,7 +16,7 @@ export const loginSuccess = (payload) => ({
     payload
 })
 
-export const logout = (payload) => ({
+export const logoutUser = (payload) => ({
     type: ActionTypes.LOGOUT,
     payload
 })
@@ -30,6 +30,12 @@ export const login = payload => {
         } else {
             dispatch(setError("Username or Password is incorrect"))
         }
+    }
+}
+
+export const logout = () => {
+    return dispatch => {
+        dispatch(logoutUser())
     }
 }
 

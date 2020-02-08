@@ -6,7 +6,6 @@ import UnAunthenticatedApp from './UnAuthenticatedApp/UnAuthenticatedApp';
 
 class App extends Component {
   render() {
-    console.log(this.props.isLoggedIn)
     const app = this.props.isLoggedIn ? (
       <AuthenticatedApp/>
     ) : (

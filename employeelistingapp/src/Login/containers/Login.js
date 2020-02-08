@@ -67,7 +67,7 @@ class Login extends Component {
                                                     </div>   
                                                                                                                                                          
                                                     <div className="login-btn mb-4">             
-                                                        <button className="btn btn-primary btn-block text-uppercase">Login</button>
+                                                        <button type="submit" className="btn btn-primary btn-block text-uppercase">Login</button>
                                                     </div>
                                                     {error.length > 0 &&  (
                                                         <div className="form-error mb-4 text-center">{error}</div>
