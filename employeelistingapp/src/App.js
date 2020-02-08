@@ -12,7 +12,7 @@ class App extends Component {
       <UnAunthenticatedApp/>
     )
     return (
-      {app}
+      app
     )
   }
 }
