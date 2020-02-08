@@ -6,7 +6,8 @@ function UnAunthenticatedApp() {
     return (
         <Switch>
             <Route path="/login" component={Login} />
-            <Redirect to="/login" />
+            <Route path="/" component={Login} />
+            <Redirect to="/" />
         </Switch>
     )
 }

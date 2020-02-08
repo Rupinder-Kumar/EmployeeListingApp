@@ -6,6 +6,7 @@ import UnAunthenticatedApp from './UnAuthenticatedApp/UnAuthenticatedApp';
 
 class App extends Component {
   render() {
+    console.log(this.props.isLoggedIn)
     const app = this.props.isLoggedIn ? (
       <AuthenticatedApp/>
     ) : (
@@ -19,7 +20,7 @@ class App extends Component {
 
 
 const mapStateToProps = state => ({
-
+  isLoggedIn: state.user.isLoggedIn
 });
 
 
