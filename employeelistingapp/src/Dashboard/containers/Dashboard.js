@@ -5,9 +5,9 @@ import EmployeeList from "../components/EmployeeList";
 
 class Dashboard extends Component { 
 
-componentDidMount() {
-    this.props.getEmployees();
-}
+    componentDidMount() {
+        this.props.getEmployees();
+    }
 
     render() {
         const { employees } = this.props;
