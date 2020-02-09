@@ -1,6 +1,7 @@
 import React from "react";
 
 const EmployeeList = props => {
+    const width = window.innerWidth;
     const { employees } = props;
     return (
         <div className="container">
@@ -8,7 +9,7 @@ const EmployeeList = props => {
                 <div className="col-md-12 mt-5 mb-5">
                     <h3 className="mb-4">Employee Dashboard</h3>
                     {employees.length > 0 ?
-                    <table className="table table-dark">
+                    <table className={`table table-dark table-bordered ${width <= 768 ? "table-responsive":""}`}>
                         <thead>
                             <tr>
                                 <th scope="col">Emp Id</th>

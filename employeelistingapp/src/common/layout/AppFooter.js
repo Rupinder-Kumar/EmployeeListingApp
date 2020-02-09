@@ -6,7 +6,7 @@ const AppFooter = () => {
             <hr />
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12 col-12 col-sm-12">
+                    <div className="col-md-12 col-12 col-sm-12 text-center">
                         <p> Copyright © 2020 appiness</p>
                     </div>
                 </div>
